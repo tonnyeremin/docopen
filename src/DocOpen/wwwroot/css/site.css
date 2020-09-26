@@ -1,0 +1,138 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+/* CSS HEX */
+:root{
+  --space-cadet: #22223bff;
+  --independence: #4a4e69ff;
+  --heliotrope-gray: #9a8c98ff;
+  --silver-pink: #c9ada7ff;
+  --isabelline: #f2e9e4ff;
+}
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid var(--independence);
+}
+.border-bottom {
+  border-bottom: 1px solid var(--independence);
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-color: var(--isabelline);
+}
+a {
+  color: var(--independence);
+}
+
+h1,h2,h3{
+  color: var(--space-cadet);
+}
+h4, h5, h6 {
+  color: var(--silver-pink);
+}
+
+.openbanner{
+  background-color: var(--space-cadet);
+  color: var(--isabelline);
+  display:inline-block;
+  padding: 24px;
+}
+
+.mainheader {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('../img/index_banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.mainnav a{
+  color: var(--space-cadet);
+  font-weight: bolder;
+  box-sizing: border-box;
+  border-bottom: 5px solid var(--isabelline);
+  transition: border-c 0.6s linear;
+  margin:12px;
+}
+
+.mainnav a:hover{
+  box-sizing: border-box;
+  border-bottom: 5px solid var(--space-cadet);
+  -webkit-transition: border-color 1s ease-out;
+  -moz-transition: border-color 1s ease-out;
+  -o-transition :border-colorr 1s ease-out;
+  transition: border-color 1s ease-out;
+}
+.social-header
+{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Style all font awesome icons */
+
+.fab{
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--space-cadet);
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+}
+
+.fab:hover {
+  color: var(--heliotrope-gray);
+  text-decoration: none;
+  -webkit-transition: color 1s ease-out;
+  -moz-transition: color 1s ease-out;
+  -o-transition : color 1s ease-out;
+  transition: color 1s ease-out;
+}
+
+.footer {
+  background-color: var(--space-cadet);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}

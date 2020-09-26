@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DocOpen</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row justify-content-md-center">
+                <div class="col">
+                    <h1 class="display-2">DocOpen</h1>
+                </div>
+                <div class="col-md-auto social-header">
+                    <ul class="list-inline text-right social-header">
+                        <li class="list-inline-item"><a href="" class="fab fa-facebook" target="_blank"></a></li>
+                        <li class="list-inline-item"><a href="" class="fab fa-vk" target="_blank"></a></li>
+                        <li class="list-inline-item"><a href="" class="fab fa-instagram" target="_blank"></a></li>
+                        <li class="list-inline-item"><a href="" class="fab fa-twitter" target="_blank"></a></li>
+                     </ul>
+                </div>
+            </div>
+            
+            <nav>
+                <div class="container h-100">
+                    <div class="col-12 text-center">   
+                        <ul class="list-inline mainnav">
+                            <li class="list-inline-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Rules">How to apply</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Jury">Jury</a>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+            </nav>
+        </div>            
+    </header>
+    <div class="container-fluid">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2020 - DocOpen - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://kit.fontawesome.com/bdcb1ff764.js" crossorigin="anonymous"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
