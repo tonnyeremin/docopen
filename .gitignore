@@ -229,3 +229,5 @@ _Pvt_Extensions
 
 # Paket dependency manager
 .paket/paket.exe
+src/DocOpen/appsettings.Development.json
+src/DocOpen/bin/Debug/netcoreapp3.1/appsettings.Development.json
