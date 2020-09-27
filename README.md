@@ -1,2 +1,2 @@
 # docopen
-Documentary photography competition website
+Documentary photography contest website
