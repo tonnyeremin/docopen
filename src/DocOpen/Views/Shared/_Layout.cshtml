@@ -11,8 +11,10 @@
     <header>
         <div class="container-fluid">
             <div class="row justify-content-md-center">
-                <div class="col">
-                    <h1 class="display-2">DocOpen</h1>
+                <div class="col logo">
+                       <a  asp-area="" asp-controller="Home" asp-action="Index">
+                            <h1 class="display-2">DocOpen</h1>
+                        </a>
                 </div>
                 <div class="col-md-auto social-header">
                     <ul class="list-inline text-right social-header">
@@ -32,10 +34,10 @@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Rules">How to apply</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Rules">Entry info</a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Jury">Jury</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Jury">Judjes</a>
                             </li>
                         </ul>
                     </div> 
@@ -49,9 +51,16 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - DocOpen - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer>
+        <div class="text-right">
+         <a href="" class="fas fa-arrow-up" click ="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <span>PAGE TOP</span>
+         </a>
+         </div>
+        <div class="border-top footer text-muted">
+             <div class="container">
+                &copy; 2020 - DocOpen - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
