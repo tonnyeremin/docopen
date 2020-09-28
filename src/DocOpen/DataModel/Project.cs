@@ -1,4 +1,5 @@
 using System;
+using DocOpen.Core;
 
 namespace DocOpen.Data
 {

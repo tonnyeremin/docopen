@@ -1,3 +1,4 @@
+using DocOpen.Core;
 namespace DocOpen.Data
 {
     public class User
@@ -14,5 +15,7 @@ namespace DocOpen.Data
         public string Address {get; set;}
         public int PostCode{get; set;}
         public string WebPage {get; set;}
+        public EUserState State{get; set;}
+        public ERole Role{get; set;}
     }
 }

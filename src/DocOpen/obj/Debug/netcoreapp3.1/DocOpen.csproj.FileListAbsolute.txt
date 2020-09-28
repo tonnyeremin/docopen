@@ -58,3 +58,9 @@ C:\Users\anere\Documents\Git\docopen\src\DocOpen\bin\Debug\netcoreapp3.1\Npgsql.
 C:\Users\anere\Documents\Git\docopen\src\DocOpen\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\anere\Documents\Git\docopen\src\DocOpen\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\anere\Documents\Git\docopen\src\DocOpen\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\anere\Documents\Git\docopen\src\DocOpen\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\anere\Documents\Git\docopen\src\DocOpen\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\anere\Documents\Git\docopen\src\DocOpen\obj\Debug\netcoreapp3.1\Razor\Views\Account\SignUp.cshtml.g.cs
+C:\Users\anere\Documents\Git\docopen\src\DocOpen\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\anere\Documents\Git\docopen\src\DocOpen\bin\Debug\netcoreapp3.1\SendGrid.dll
+C:\Users\anere\Documents\Git\docopen\src\DocOpen\bin\Debug\netcoreapp3.1\StarkbankEcdsa.dll
