@@ -3,10 +3,10 @@ name: .NET Core development
 on:
   push:
     branches: 
-    - user-portal
+    - 'user-portal'
   pull_request:
     branches: 
-    - user-portal
+    - 'user-portal'
 
 jobs:
   build:
