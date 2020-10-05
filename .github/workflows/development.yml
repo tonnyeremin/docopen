@@ -2,9 +2,9 @@ name: .NET Core development
 
 on:
   push:
-    branches: [user-portal]
+    branches: user-portal
   pull_request:
-    branches: [user-portal]
+    branches: user-portal
 
 jobs:
   build:
