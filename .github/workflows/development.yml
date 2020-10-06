@@ -25,3 +25,9 @@ jobs:
     - name: Test
       run: dotnet test --no-restore --verbosity normal
       working-directory: ./src/DocOpen
+    - name: App Settings Variable Substitution
+      uses: microsoft/variable-substitution@v1
+      with:
+        files: '${{env.DOTNET_ROOT}}/DocOpen/appsettings.json'
+      env:
+        ConnectionStrings.Default: ${{ secrets.DOCOPENCONTEXT }}
