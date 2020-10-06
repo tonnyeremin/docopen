@@ -29,7 +29,8 @@ jobs:
     - name: Copy sources
       run: |
         mkdir build
-        cp -r $GITHUB_WORKSPACE/src/DocOpen/bin/Release/netcoreapp3.1/* build/ 
+        ls $GITHUB_WORKSPACE/src/DocOpen/bin/Release/netcoreapp3.1/
+        cp -r $GITHUB_WORKSPACE/src/DocOpen/bin/Release/netcoreapp3.1/. build/ 
     - name: App Settings Variable Substitution
       uses: microsoft/variable-substitution@v1
       with:
