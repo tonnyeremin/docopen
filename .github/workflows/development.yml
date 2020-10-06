@@ -22,15 +22,14 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore
       working-directory: ./src/DocOpen
+    - name: Copy sources
+      run: |
+        mkdir build
+        cp -r $GITHUB_WORKSPACE/src/DocOpen/bin/Release/netcoreapp3.1/. build/ 
     - name: Test
       run: dotnet test --no-restore --verbosity normal
       working-directory: ./src/DocOpen
     - uses: actions/checkout@v2
-    - name: Copy sources
-      run: |
-        mkdir build
-        ls $GITHUB_WORKSPACE/src/DocOpen/bin/Release/netcoreapp3.1/
-        cp -r $GITHUB_WORKSPACE/src/DocOpen/bin/Release/netcoreapp3.1/. build/ 
     - name: App Settings Variable Substitution
       uses: microsoft/variable-substitution@v1
       with:
