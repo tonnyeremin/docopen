@@ -25,9 +25,26 @@ jobs:
     - name: Test
       run: dotnet test --no-restore --verbosity normal
       working-directory: ./src/DocOpen
+    - uses: actions/checkout@v2
+    - name: Copy sources
+      run: |
+        mkdir build
+        cp -r ./src/DocOpen/bin/Release/netcoreapp3.1/. build/ 
     - name: App Settings Variable Substitution
       uses: microsoft/variable-substitution@v1
       with:
-        files: './src/DocOpen/bin/Release/netcoreapp3.1/appsettings.Development.json'
+        files: 'build/appsettings.Development.json'
       env:
         ConnectionStrings.DocOpenContext: ${{ secrets.DOCOPENCONTEXT }}
+    - name: Upload files to remote host
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.DEV_HOST }}
+        username: ${{ secrets.DEV_USERNAME }}
+        key: ${{ secrets.DEV_KEY }}
+        passphrase: ${{ secrets.DEV_PASSPHRASE }}
+        port: ${{ secrets.DEV_PORT }}
+        source: build
+        target: ${{ secrets.DEV_TARGET_DIR }}
+        strip_components: 1
+
