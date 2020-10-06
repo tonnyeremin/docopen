@@ -30,4 +30,4 @@ jobs:
       with:
         files: './src/DocOpen/appsettings.Development.json'
       env:
-        ConnectionStrings.Default: ${{ secrets.DOCOPENCONTEXT }}
+        ConnectionStrings.DocOpenContext: ${{ secrets.DOCOPENCONTEXT }}
