@@ -46,6 +46,5 @@ jobs:
         source: build
         target: ${{ secrets.DEV_TARGET_DIR }}
         strip_components: 1
-    - name: Well done 
     - uses: actions/checkout@v2   
 
