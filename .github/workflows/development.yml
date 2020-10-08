@@ -29,7 +29,6 @@ jobs:
     - name: Test
       run: dotnet test --no-restore --verbosity normal
       working-directory: ./src/DocOpen
-    - uses: actions/checkout@v2
     - name: App Settings Variable Substitution
       uses: microsoft/variable-substitution@v1
       with:
@@ -47,4 +46,6 @@ jobs:
         source: build
         target: ${{ secrets.DEV_TARGET_DIR }}
         strip_components: 1
+    - name: Well done 
+    - uses: actions/checkout@v2   
 
