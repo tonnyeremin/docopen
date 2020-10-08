@@ -73,7 +73,7 @@ namespace DocOpen
 
 
             app.UseAuthentication();  
-            app.UseHttpsRedirection();
+  
             app.UseStaticFiles();
 
             app.UseRouting();
